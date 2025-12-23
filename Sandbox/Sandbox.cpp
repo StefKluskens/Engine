@@ -7,7 +7,6 @@
 
 #include "Input/InputManager.h"
 
-#include "Physics/Rigidbody.h"
 #include "Shapes/Shapes.h"
 
 #include "ShapeObject.h"
@@ -29,17 +28,4 @@ void SB::SandBox::Load()
 
 	auto shapeObject = std::make_unique<ShapeObject>(playerGo.get());
 	playerGo->AddComponent(std::move(shapeObject));
-
-	/*auto circleShape = std::make_unique<Engine::Circle>(300, 200, 20, 255, 255, 255);
-	auto circle = Engine::Rigidbody::CreateCircleBody(2.0f, glm::vec2(0.0f, 0.0f), 2.0f, false, 0.5f);
-	if (circle != nullptr)
-	{
-		std::cout << "Circle created\n";
-	}
-
-	auto box = Engine::Rigidbody::CreateBoxBody(2.0f, 2.0f, glm::vec2(0.0f, 0.0f), 2.0f, false, 0.5f);
-	if (box != nullptr)
-	{
-		std::cout << "Box created\n";
-	}*/
 }
