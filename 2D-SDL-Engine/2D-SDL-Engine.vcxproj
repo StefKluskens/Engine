@@ -24,6 +24,7 @@
     <ProjectGuid>{5be8ee41-6419-4096-959c-00c296e1168a}</ProjectGuid>
     <RootNamespace>My2DSDLEngine</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
